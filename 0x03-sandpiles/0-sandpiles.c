@@ -67,7 +67,7 @@ static void print_grid(int grid[3][3])
 void sandfall(int grid[3][3])
 {
 	int i, j;
-	int temp[3][3] = {0};
+	int temp[3][3] = {{0}};
 
 	for (i = 0; i < 3; i++)
 	{
