@@ -72,8 +72,7 @@ void sandfall(int grid[3][3])
 	for (i = 0; i < 3; i++)
 	{
 		for (j = 0; j < 3; j++)
-		{	
-			print_grid(grid);
+		{
 			if (grid[i][j] > 3)
 			{
 				grid[i][j] -= 4;
