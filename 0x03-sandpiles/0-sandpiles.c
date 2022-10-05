@@ -23,8 +23,8 @@ void add_grid(int grid1[3][3], int grid2[3][3])
  */
 int more_than_four(int grid[3][3])
 {
-	int i = 0;
-	int j = 0;
+	int i;
+	int j;
 
 	for (i = 0; i < 3; i++)
 	{
