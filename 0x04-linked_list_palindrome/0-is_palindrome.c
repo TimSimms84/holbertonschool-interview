@@ -70,7 +70,7 @@ int is_palindrome(listint_t **head)
 	int len, isPal, *arr;
 
 	if (head == NULL || *head == NULL)
-		isPal = 1;
+		return (1);
 	temp = *head;
 	len = get_listint_size(*head);
 	arr = malloc(sizeof(int) * len);
