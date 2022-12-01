@@ -14,10 +14,9 @@
 
 /* prototypes */
 int slide_line(int *line, size_t size, int direction);
-int slide_left(int *line, size_t size);
-int slide_right(int *line, size_t size);
-
-
+int slide_it(int *line, size_t size, int direction);
+void reverse_array(int *line, size_t size);
+void add_array(int *line, size_t size);
 
 
 #endif /* SLIDE_LINE_H */
