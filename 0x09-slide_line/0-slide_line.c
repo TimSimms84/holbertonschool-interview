@@ -16,9 +16,6 @@ int slide_line(int *line, size_t size, int direction)
 	return (0);
 }
 
-
-
-
 /**
 * slide_it - slides and merges an array of integers to the
 * left if intergers match
