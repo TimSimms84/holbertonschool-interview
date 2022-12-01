@@ -143,7 +143,7 @@ int slide_right(int *line, size_t size)
 			{
 				line[j + 1] = line[j];
 				line[j] = 0;
-				break;
+				// break;
 			}
 		}
 	}
