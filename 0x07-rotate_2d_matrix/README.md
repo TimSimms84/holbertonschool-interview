@@ -13,15 +13,13 @@ def rotate_2d_matrix(matrix):
     Args:
         matrix (list): 2D matrix
     """
-    n = len(matrix)
-    for i in range(n // 2):
-        for j in range(i, n - i - 1):
-            temp = matrix[i][j]
-            matrix[i][j] = matrix[n-1-j][i]
-            matrix[n-1-j][i] = matrix[n-1-i][n-1-j]
-            matrix[n-1-i][n-1-j] = matrix[j][n-1-i]
-            matrix[j][n-1-i] = temp
-    return None
+
+    length = len(matrix)
+    result = [[0] * length for _ in range(length)]
+    for i in range(length):
+        for j in range(length):
+            result[j][length-1-i] = matrix[i][j]
+    matrix[:] = result[:]
 ```
 ## Arguements
 
