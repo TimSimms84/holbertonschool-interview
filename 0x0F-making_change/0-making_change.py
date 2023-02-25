@@ -15,13 +15,13 @@ def makeChange(coins, total):
         given amount of money. If change cannot be made, return -1.
     """
     coins.sort(reverse=True)
-    totalCoins = 0
+    count = 0
     for coin in coins:
         if total >= coin:
-            totalCoins += total // coin
+            count += total // coin
             total %= coin
     if total == 0:
-        return totalCoins
-    if total < 1:
+        return count
+    if total <= 0:
         return 0
     return -1
