@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+0-island_perimeter
+"""
+
+
 def island_perimeter(grid):
     """
     Calculates the perimeter of an island in a grid of 0s and 1s.
