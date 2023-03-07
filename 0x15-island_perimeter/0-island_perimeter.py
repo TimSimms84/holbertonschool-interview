@@ -64,12 +64,12 @@ def check_neighbors(array, col, row):
     """
     perimeter = 4
     if array[col][row] == 1:
-        if array[col][row + 1] == 1:
+        if row + 1 < len(array[col]) and array[col][row + 1] == 1:
             perimeter -= 1
-        if array[col][row - 1] == 1:
+        if row - 1 >= 0 and array[col][row - 1] == 1:
             perimeter -= 1
-        if array[col + 1][row] == 1:
+        if col + 1 < len(array) and array[col + 1][row] == 1:
             perimeter -= 1
-        if array[col - 1][row] == 1:
+        if col - 1 >= 0 and array[col - 1][row] == 1:
             perimeter -= 1
     return perimeter
